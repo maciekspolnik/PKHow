@@ -1,0 +1,36 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    padding: 2em;
+    overflow: auto;
+}
+
+.projects>div>img{
+    height: 60%;
+    width: 100%;
+    object-fit:fill;
+    border-radius: 1em 1em 0 0;
+}
+.projects>div>div{
+    font: normal normal normal 20px/27px Segoe UI;
+    color: #444444;
+    height: 40%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projects>div{
+    background: #A4DFE7 0% 0% no-repeat padding-box;
+    border-radius: 1em;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projects>div>div>h2{
+    color:#555555;
+    margin-top: 0;
+}
