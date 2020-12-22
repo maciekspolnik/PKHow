@@ -29,12 +29,16 @@ body{
 }
 
 .logo > img{
-    height: 50vh;
+    height: 40vh;
     margin-bottom: 0;
     margin-left: 1%;
 }
 
-
+.logo > div{
+    margin-left: 1em;
+    width: 50%;
+    font-size: 30px;
+}
 
 .login-container{
     width: 50%;
@@ -48,12 +52,8 @@ form.login{
     align-items: center;
     width: 90%;
     height: 60vh;
-    background: #FFFFFFE0 0% 0% no-repeat padding-box;
-    box-shadow: 0px 6px 6px #00000029;
-    border: none;
     background: #2B2D426D 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 6px #00000029;
-    
     border-radius: 74px;
 }
 
@@ -61,18 +61,19 @@ form.login{
 button{
     background: #B1F6FFD4 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    border: 1px solid #707070;
-    width: 60%;
+    border: 0.5px solid #707070;
+    width: 30vw;
     height: 5vh;
     border: none;
     border-radius: 20px;
     color: #707070;
-    margin: 1em;
-    padding: 0.4em;
-    line-height: 2.5em;
+    margin-top: 1em;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
 }
 input {
-    width: 60%;
+    width: 30vw;
     height: 5vh;
     border: 0.5px solid var(--unnamed-color-707070);
     background: #F0F0F0 0% 0% no-repeat padding-box;
@@ -81,8 +82,11 @@ input {
     border-radius: 20px;
     padding: 1em;
     margin: 1em;
-    
-    opacity: 1;
+}
+.login>div{
+    font: normal normal normal 20px/27px Segoe UI;
+    margin-bottom: 1.5em;
+    font-size: 30px;
 }
 
 @media only screen and (max-device-width: 420px){
@@ -114,7 +118,6 @@ nav{
     width: 20vw;
     height: 100%;
     background: transparent linear-gradient(180deg, #5F8594B5 0%, #5F8594 100%) 0% 0% no-repeat padding-box;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -124,6 +127,7 @@ nav{
 nav > img{
     width: 60%;
     margin: 0.5em auto;
+    justify-content: center;
 
 }
 
@@ -136,19 +140,23 @@ main{
 a {
     text-decoration: none;
     display: inline-block;
-    line-height: 2em;
+
 }
 
 .button{
     background: #B1F6FFD4 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    border-radius: 1em;
-    text-align: center;
-    letter-spacing: 0.7px;
+    border-radius: 1.5em;
     color: #444444;
     font: normal normal normal 20px/27px Segoe UI;
-    padding: 0.5em;
+    padding: 1em;
     width: 90%;
+    height: 2vh;
+    font-size: 30px;
+    text-align: center;
+    text-justify: distribute-all-lines;
+    justify-content: center;
+
 }
 
 ul{
@@ -157,13 +165,14 @@ ul{
     height:100%;
     margin: 0 auto;
     padding: 0;
-    letter-spacing: 0.7px;
     position: relative;
 }
 
 li{
-    text-align: left;
+    
+    justify-content: center;
     margin-bottom: 1em;
+    
 }
 
 li:last-child{
@@ -214,7 +223,6 @@ header{
     width: 80%;
     text-align: left;
     justify-content: center;
-    color: #444444;
     margin: 0;
     font: normal normal normal 20px/27px Segoe UI;
     box-shadow: 0px 2px 6px #00000029;

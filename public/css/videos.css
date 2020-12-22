@@ -7,10 +7,11 @@ section{
 }
 
 .projects>div>img{
-    height: 60%;
+    height: auto;
     width: 100%;
     object-fit:fill;
     border-radius: 1em 1em 0 0;
+    
 }
 .projects>div>div{
     font: normal normal normal 20px/27px Segoe UI;
@@ -23,12 +24,13 @@ section{
 }
 
 .projects>div{
-    background: #A4DFE7 0% 0% no-repeat padding-box;
+    background: #e8ffa8 0% 0% no-repeat padding-box;
     border-radius: 1em;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: fit-content;
 }
 .projects>div>div>h2{
     color:#555555;
