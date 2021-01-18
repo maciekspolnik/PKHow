@@ -36,3 +36,14 @@ section{
     color:#555555;
     margin-top: 0;
 }
+
+section.upload-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upload-form > form {
+    display: flex;
+    flex-direction: column;
+}

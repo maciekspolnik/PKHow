@@ -45,10 +45,10 @@
              </header>
              <section class="projects">
                  <div id=project-1>
-                    <img src="public\img\uploads\Delta.png">
+                    <img src="public/uploads/<?= $video->getImage()?>">
                     <div>
-                        <h2>Platforma DELTA</h2>
-                        <p>Krótki film wprowadzający do pracy na platformie edukacyjnej DELTA</p>
+                        <h2><?= $video->getTitle()?></h2>
+                        <p><?= $video->getDescription()?></p>
                     </div>
                  </div>
                  <div id=project-2>

@@ -72,7 +72,7 @@ button{
     justify-content: center;
     text-align: center;
 }
-input {
+input, textarea {
     width: 30vw;
     height: 5vh;
     border: 0.5px solid var(--unnamed-color-707070);
@@ -241,4 +241,5 @@ header{
     height:6vh;
     margin-left: 1em;
 }
+
 
