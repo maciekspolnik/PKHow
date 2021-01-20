@@ -7,11 +7,28 @@ class Video
     private $description;
     private $image;
 
-    public function __construct($title, $description, $image)
+    public function __construct($title, $description,$url, $image)
     {
         $this->title = $title;
         $this->description = $description;
         $this->image = $image;
+        $this->url = $url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param mixed $url
+     */
+    public function setUrl($url): void
+    {
+        $this->url = $url;
     }
 
     public function getTitle()

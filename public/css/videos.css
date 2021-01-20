@@ -6,11 +6,14 @@ section{
     overflow: auto;
 }
 
-.projects>div>img{
+.projects>div>p>a>img{
     height: auto;
     width: 100%;
     object-fit:fill;
     border-radius: 1em 1em 0 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
     
 }
 .projects>div>div{
@@ -21,9 +24,11 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-block-end: 0;
 }
 
 .projects>div{
+
     background: #B1F6FFD4 0% 0% no-repeat padding-box;
     border-radius: 1em;
     height: auto;

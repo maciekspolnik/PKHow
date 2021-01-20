@@ -44,53 +44,19 @@
                 </div>
              </header>
              <section class="projects">
-
+                 <?php foreach ($videos as $video): ?>
                  <div id=project-1>
-                    <img src="public\img\uploads\Office.png">
+                     <p>
+                         <a href=<?=$video->getUrl()?>>
+                        <img border="0" alt="PK" src=public\uploads\<?=$video->getImage()?>></a>
+                     </p>
                     <div>
-                        <h2>Eduroam PK</h2>
-                        <p>W tym filmie wyjaśniamy proces uzyskiwania certyfikatu i konfiguracji sieci Eduroam</p>
+                        <h2><?=$video->getTitle()?></h2>
+                        <p><?=$video->getDescription()?></p>
                     </div>
                  </div>
-                 
-                 <div id=project-2>
-                    <img src="public\img\uploads\Office.png">
-                    <div>
-                        <h2>Platforma ELF</h2>
-                        <p>Krótki film wprowadzający do pracy na platformie edukacyjnej ELF</p>
-                    </div>
-                 </div>
-                 
-                 <div id=project-3>
-                    <img src="public\img\uploads\Office.png">
-                    <div>
-                        <h2>Office 365</h2>
-                        <p>W tym filmie dowiesz się, jak założyć konto Microsoft 365 dla studentów Politechniki Krakowskiej</p>
-                    </div>
-                 </div>
-                 
-                 <div id=project-4>
-                    <img src="public\img\uploads\Office.png">
-                    <div>
-                        <h2>Poczta Outlook</h2>
-                        <p>Film instruujący jak w łatwy sposób podpiąć swój mail studencki pod prywatną poczte elektroniczną lub odwrotnie</p>
-                    </div>
-                 </div>
-                 
-                 <div id=project-5>
-                    <img src="public\img\uploads\Office.png">
-                    <div>
-                        <h2>Microsoft Teams</h2>
-                        <p>Krótki przewodnik wideo po obsłudze programu MS Teams</p>
-                    </div>
-                 </div>
+                 <?php endforeach; ?>
 
-                 <div id=project-6>
-                     <img src="public/uploads/<?= $video->getImage()?>">
-                     <div>
-                         <h2><?= $video->getTitle()?></h2>
-                         <p><?= $video->getDescription()?></p>
-                     </div>
                  </div>
 
              </section>

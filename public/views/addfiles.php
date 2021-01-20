@@ -55,6 +55,7 @@
                 <form action="addfile" method="POST" ENCTYPE="multipart/form-data">
                     <input name="title" type="text" placeholder="title">
                     <textarea name="description" rows="5" placeholder="description"></textarea>
+                    <input name="url" type="text" placeholder="url">
                     <input type="file" name="file">
                     <button type="submit">send</button>
                 </form>

@@ -7,8 +7,5 @@ class DefaultController extends AppController {
     {
         $this->render('login');
     }
-    public function videos()
-    {
-        $this->render('videos');
-    }
+
 }
