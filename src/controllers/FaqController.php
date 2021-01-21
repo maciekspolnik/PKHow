@@ -6,19 +6,17 @@ require_once __DIR__.'/../models/Video.php';
 require_once __DIR__.'/../repository/VideoRepository.php';
 
 
-class VideosController extends AppController
+class FaqController extends AppController
 {
-    const MAX_SIZE = 1024*1024;
-    const TYPES_ALLOWED = ['image/png','image/jpeg'];
-    const UPLOAD_DIR = '/../public/video_covers/';
+
 
     private $message = [];
-    private $videoRepository;
+    private $faqRepository;
 
     public function __construct()
     {
         parent::__construct();
-        $this->videoRepository = new VideoRepository();
+
     }
 
     public function videos()

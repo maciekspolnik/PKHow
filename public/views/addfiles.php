@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/videos.css">
     <script src="https://kit.fontawesome.com/6a29cc77d5.js" crossorigin="anonymous"></script>
-    <title>PK How - Dodaj pliki</title>
+    <title>PK How - Dodaj Film</title>
 </head>
 
 <body>
@@ -18,10 +18,10 @@
                     <a href="#" class="button">Aktualności</a>
                 </li>
                 <li>
-                    <a href="#" class="button">Wideo</a>
+                    <a href="http://localhost:8080/videos" class="button">Wideo</a>
                 </li>
                 <li>
-                    <a href="#" class="button">FAQ</a>
+                    <a href=http://localhost:8080/faq" class="button">FAQ</a>
                 </li>
                 <li>
                     <a href="#" class="button">Ustawienia</a>
@@ -44,7 +44,7 @@
                 </div>
              </header>
              <section class="upload-form">
-                 <h1>DODAJ PLIKI</h1>
+                 <h1>DODAJ WIDEO</h1>
                  <?php if(isset($messages)) {
                      foreach ($messages as $message)
                      {

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="public/css/videos.css">
+    <link rel="stylesheet" type="text/css" href="public/css/faq.css">
     <script src="https://kit.fontawesome.com/6a29cc77d5.js" crossorigin="anonymous"></script>
-    <title>PK How - Videos</title>
+    <title>PK How - FAQ</title>
 </head>
 
 <body>
@@ -43,19 +43,23 @@
                     <img src="public\img\not-logged-in.png">
                 </div>
              </header>
-             <section class="projects">
-                 <?php foreach ($videos as $video): ?>
+             <p>
+                 FAQ
+             </p>
+             <section class="faq">
                  <div id=project-1>
+                     <a href='#'>
                      <p>
-                         <a href=<?=$video->getUrl()?>>
-                        <img border="0" alt="PK" src=public\img\video_covers\<?=$video->getImage()?>></a>
+
+                             <img src="public\img\not-logged-in.png">
+
                      </p>
                     <div>
-                        <h2><?=$video->getTitle()?></h2>
-                        <p><?=$video->getDescription()?></p>
+                        <h2>Funkcjonowanie uczelni a SARS-COV-2</h2>
                     </div>
+                     </a>
                  </div>
-                 <?php endforeach; ?>
+
 
                  </div>
 

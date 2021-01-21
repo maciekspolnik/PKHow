@@ -20,16 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc38df83-1ce9-40d6-a841-e0c358be1ebb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/FaqController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/videos.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/videos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/uploads/Delta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/uploads/ELF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/uploads/Eduroam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/uploads/Office.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/uploads/Outlook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/uploads/Teams.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/uploads/jpg.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/addfiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/addfiles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/videos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/VideosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/VideosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/VideosController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Video.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +48,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,19 +68,22 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/repository" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\macie\Desktop\WDPAI\PKHow\public\img" />
+      <recent name="C:\Users\macie\Desktop\WDPAI\PKHow\public\uploads" />
+      <recent name="C:\Users\macie\Desktop\WDPAI\PKHow" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\macie\Desktop\WDPAI\PKHow\src\repository" />
+      <recent name="C:\Users\macie\Desktop\WDPAI\PKHow\public\css" />
       <recent name="C:\Users\macie\Desktop\WDPAI\PKHow\src\controllers" />
       <recent name="C:\Users\macie\Desktop\WDPAI\PKHow\public\views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\macie\Desktop\WDPAI\PKHow" />
+      <recent name="C:\Users\macie\Desktop\WDPAI\PKHow\src\repository" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +102,9 @@
       <workItem from="1610989706910" duration="5386000" />
       <workItem from="1611154247243" duration="1474000" />
       <workItem from="1611159323130" duration="1912000" />
-      <workItem from="1611170609424" duration="6736000" />
+      <workItem from="1611170609424" duration="11585000" />
+      <workItem from="1611254212295" duration="4344000" />
+      <workItem from="1611259473962" duration="747000" />
     </task>
     <servers />
   </component>
@@ -103,14 +124,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="349" y="67" key="#CLI_Interpreters" timestamp="1610913771452">
+    <state x="349" y="67" key="#CLI_Interpreters" timestamp="1611179845500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="67" key="#CLI_Interpreters/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610913771452" />
-    <state x="2514" y="0" key="#PHP" timestamp="1610930974049">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="349" y="67" key="#CLI_Interpreters/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611179845500" />
+    <state x="475" y="55" key="#PHP" timestamp="1611179851933">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="475" y="55" key="#PHP/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610913814312" />
+    <state x="475" y="55" key="#PHP/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611179851933" />
     <state x="2514" y="0" key="#PHP/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610930974049" />
     <state x="2256" y="361" key="#SQL_Dialects" timestamp="1610991864980">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -121,11 +142,11 @@
     </state>
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610989596090" />
     <state x="2371" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610990018400" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1611172536736">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2638" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1611258779250">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611172536736" />
-    <state x="2638" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610991170480" />
+    <state x="2638" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611258779250" />
     <state x="471" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611160602098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -134,6 +155,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610927043276" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1611179850687">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611179850687" />
     <state width="1205" height="128" key="GridCell.Tab.0.bottom" timestamp="1611160602625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -155,11 +180,11 @@
     </state>
     <state x="546" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610899965561" />
     <state x="2603" y="170" key="NewPhpClassDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610991009654" />
-    <state x="2675" y="423" key="NewPhpFileDialog" timestamp="1610990173014">
+    <state x="2675" y="423" key="NewPhpFileDialog" timestamp="1611254906850">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610899207060" />
-    <state x="2675" y="423" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610990173014" />
+    <state x="2675" y="423" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611254906850" />
     <state x="2266" y="72" key="SettingsEditor" timestamp="1610991348557">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -169,10 +194,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2676" y="332" width="408" height="371" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610993078248" />
-    <state x="328" y="81" width="638" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611170830208">
+    <state x="328" y="81" width="638" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611178466483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="328" y="81" width="638" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611170830208" />
+    <state x="328" y="81" width="638" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611178466483" />
     <state x="2738" y="129" width="574" height="781" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610989954478" />
   </component>
 </project>

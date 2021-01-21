@@ -26,7 +26,7 @@ class UserRepository extends Repository
     public function addUser(User $user)
     {
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO users_details (name, surname, phone)
+            INSERT INTO user_details (name, surname, phone_number)
             VALUES (?, ?, ?)
         ');
 
@@ -51,7 +51,7 @@ class UserRepository extends Repository
     public function getUserDetailsId(User $user): int
     {
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM public.users_details WHERE name = :name AND surname = :surname AND phone = :phone
+            SELECT * FROM public.user_details WHERE name = :name AND surname = :surname AND phone_number = :phone
         ');
         $stmt->bindParam(':name', $user->getName(), PDO::PARAM_STR);
         $stmt->bindParam(':surname', $user->getSurname(), PDO::PARAM_STR);

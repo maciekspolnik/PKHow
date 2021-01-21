@@ -7,5 +7,10 @@ class DefaultController extends AppController {
     {
         $this->render('login');
     }
+    public function faq()
+    {
+        $this->render('faq');
+    }
+
 
 }
