@@ -2,8 +2,8 @@
 
 require_once 'AppController.php';
 
-require_once __DIR__.'/../models/Video.php';
-require_once __DIR__.'/../repository/VideoRepository.php';
+require_once __DIR__.'/../models/FAQ.php';
+require_once __DIR__.'/../repository/FaqRepository.php';
 
 
 class FaqController extends AppController
@@ -16,44 +16,25 @@ class FaqController extends AppController
     public function __construct()
     {
         parent::__construct();
-
+        $this->faqRepository = new FaqRepository();
     }
 
-    public function videos()
+    public function faq()
     {
-        $videos = $this->videoRepository->getVideos();
-        $this->render('videos',['videos'=>$videos]);
+        $faq = $this->faqRepository->getAllFAQ();
+        $this->render('faq', ['allFaq' => $faq]);
     }
 
-    public function addFile()
+    public function searchfaq()
     {
-        if($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file']))
+        $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
+        if ($contentType === "application/json")
         {
-            move_uploaded_file($_FILES['file']['tmp_name'],
-                dirname(__DIR__).self::UPLOAD_DIR.$_FILES['file']['name']);
-
-            $video = new Video($_POST['title'],$_POST['description'],$_POST['url'],$_FILES['file']['name']);
-            $this->videoRepository->addVideo($video);
-
-            $url = "http://$_SERVER[HTTP_HOST]";
-            header("Location: {$url}/videos");
-
+            $content = trim(file_get_contents("php://input"));
+            $decoded = json_decode($content, true);
+            header('Content-type:application/json');
+            http_response_code(200);
+            echo json_encode($this->faqRepository->getFaqByData($decoded['search']));
         }
-        return $this->render('addfiles',['messages'=>$this->message]);
-    }
-
-    private function validate(array $file):bool
-    {
-       if($file['size'] > self::MAX_SIZE)
-       {
-           $this->messages[] ='Maximum file size has been reached';
-           return false;
-       }
-       if(!isset($file['type']) && !in_array($file['type'],self::TYPES_ALLOWED))
-       {
-           $this->messages[] ='File type unknown';
-           return false;
-       }
-       return true;
     }
 }

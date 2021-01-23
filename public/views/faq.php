@@ -3,67 +3,41 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/faq.css">
     <script src="https://kit.fontawesome.com/6a29cc77d5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./public/js/searchfaq.js" defer></script>
     <title>PK How - FAQ</title>
 </head>
 
 <body>
     <div class="base-container">
-         <nav>
-            <img src="public/img/logo.svg">
-            <ul>
-                <li>
-                    <a href="#" class="button">Strona Główna</a>
-                </li>
-                <li>
-                    <a href="#" class="button">Aktualności</a>
-                </li>
-                <li>
-                    <a href="http://localhost:8080/videos" class="button">Wideo</a>
-                </li>
-                <li>
-                    <a href="http://localhost:8080/faq" class="button">FAQ</a>
-                </li>
-                <li>
-                    <a href="#" class="button">Ustawienia</a>
-                </li>
-            </ul>
-         </nav>
+        <?php include('public/views/menu.php') ?>
          <main>
              <header>
-                <div class="search-bar">
-                    <form>
-                        <input placeholder="Wyszukaj">
-                    </form>
-                </div>
-                <div class="filters">
-                Filtr
-                </div>
-                <div class = profile>
-                    Zaloguj się
-                    <img src="public\img\not-logged-in.png">
-                </div>
+                 <div class="search-bar">
+                     <input placeholder="Wyszukaj">
+                 </div>
+                 <div class = profile>
+                     Zaloguj się
+                 </div>
              </header>
-             <p>
-                 FAQ
-             </p>
              <section class="faq">
+                 <?php foreach($allFaq as $faq): ?>
                  <div id=project-1>
-                     <a href='#'>
-                     <p>
-
-                             <img src="public\img\not-logged-in.png">
-
-                     </p>
-                    <div>
-                        <h2>Funkcjonowanie uczelni a SARS-COV-2</h2>
-                    </div>
-                     </a>
+                     <div class = projects>
+                         <div class = question><?=$faq->getQuestion()?></div>
+                         <div class = answer><?=$faq->getAnswer()?></div>
+                     </div>
                  </div>
-
-
-                 </div>
-
+                 <?php endforeach; ?>
              </section>
          </main>
     </div>
 </body>
+
+<template id="faq-template">
+    <div id=project-1>
+        <div class = projects>
+            <div class = question>question</div>
+            <div class = answer>answer</div>
+        </div>
+    </div>
+</template>

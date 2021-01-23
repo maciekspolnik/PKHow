@@ -6,7 +6,7 @@ section{
     overflow: auto;
 }
 
-.projects>div>p>a>img{
+.photo>a>img{
     height: auto;
     width: 100%;
     object-fit:fill;

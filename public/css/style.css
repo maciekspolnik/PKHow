@@ -230,7 +230,7 @@ header{
     min-width: fit-content;
 }
 
-.search-bar > form > input{
+.search-bar > input{
     background: #F0F0F0 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 2em;

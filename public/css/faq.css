@@ -9,25 +9,6 @@ section
     justify-content: center;
 }
 
-p{
-    font: normal normal normal 60px/60px Segoe UI;
-    color: #444444;
-    margin-left: 1em;
-    margin-bottom: 0;
-    height: 5%;
-}
-
-.faq>div>a>p>img
-{
-    height: auto;
-    width: 70%;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 1em 1em 0 0;
-}
-
-
 
 .faq>div
 {
@@ -40,7 +21,7 @@ p{
     min-width: fit-content;
 }
 
-.faq>div>a>div
+.faq>div>div
 {
     font: normal normal normal 20px/27px Segoe UI;
     color: #444444;
@@ -53,13 +34,12 @@ p{
 }
 
 
-.faq>div>a>div>h2
+.faq>div>div>h2
 {
     color:#555555;
-    margin-top: 0;
 }
 
-.faq>div>a{
+.faq>div{
     text-decoration: none;
     display: inline-block;
 }

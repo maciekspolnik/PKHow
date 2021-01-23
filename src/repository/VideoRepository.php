@@ -48,6 +48,18 @@ class VideoRepository extends Repository
         return $result;
     }
 
+    public function getVideoByTitle(string $searchString)
+    {
+        $searchString = '%'.strtolower($searchString).'%';
+        $statement = $this->database->connect()->prepare('
+            SELECT * FROM public.videos WHERE LOWER(title) LIKE :search OR LOWER(description) LIKE :search
+        ');
+        $statement->bindParam(':search',$searchString,PDO::PARAM_STR);
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function addVideo(Video $video): void
     {
     $date = new DateTime();
