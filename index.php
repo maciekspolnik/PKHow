@@ -5,7 +5,7 @@ $path = trim($_SERVER['REQUEST_URI'],'/');
 $path = parse_url($path, PHP_URL_PATH);
 
 Router::get('index','DefaultController');
-Router::get('videos','VideosController');
+Router::get('videos','DefaultController');
 Router::get('faq','FaqController');
 Router::post('login','SecurityController');
 Router::post('register','SecurityController');

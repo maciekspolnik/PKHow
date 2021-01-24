@@ -1,0 +1,66 @@
+
+
+.logo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    text-align: left;
+    font: normal normal normal 45px/56px Square721 BT;
+    letter-spacing: 0;
+    color: #444444;
+}
+
+.logo > img{
+    height: 40vh;
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+
+.logo > div{
+    margin-left: 1em;
+    width: 50%;
+    font-size: 30px;
+}
+
+.login-container{
+    width: 50%;
+}
+
+form.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60vh;
+    background: #2B2D426D 0 0 no-repeat padding-box;
+    box-shadow: 0 5px 6px #00000029;
+    border-radius: 74px;
+}
+form.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 75vh;
+    background: #2B2D426D 0 0 no-repeat padding-box;
+    box-shadow: 0 5px 6px #00000029;
+    border-radius: 74px;
+}
+
+.login>div{
+    font: normal normal normal 20px/27px Segoe UI;
+    margin-bottom: 1.5em;
+    font-size: 30px;
+}
+
+.Register>div{
+    font: normal normal normal 20px/27px Segoe UI;
+    margin-bottom: 1.5em;
+    font-size: 30px;
+}

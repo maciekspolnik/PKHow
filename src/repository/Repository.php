@@ -11,4 +11,10 @@ class Repository
     {
         $this->database = new Database();
     }
+
+    protected function logout()
+    {
+
+    }
+
 }

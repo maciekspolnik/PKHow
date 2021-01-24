@@ -1,13 +1,18 @@
-section{
+section
+{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
     grid-gap: 1em;
     padding: 2em;
     overflow: auto;
+    align-items: center;
+    justify-content: center;
 }
 
+
 .photo>a>img{
-    height: auto;
+    height: 70%;
     width: 100%;
     object-fit:fill;
     border-radius: 1em 1em 0 0;
@@ -20,16 +25,14 @@ section{
     font: normal normal normal 20px/27px Segoe UI;
     color: #444444;
     height: 40%;
-    margin: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-block-end: 0;
 }
 
 .projects>div{
 
-    background: #B1F6FFD4 0% 0% no-repeat padding-box;
+    background: #B1F6FFD4 0 0 no-repeat padding-box;
     border-radius: 1em;
     height: auto;
     display: flex;
@@ -37,9 +40,10 @@ section{
     justify-content: space-between;
     min-width: fit-content;
 }
-.projects>div>div>h2{
+.video_title{
     color:#555555;
     margin-top: 0;
+    margin-left: 0.3em;
 }
 
 section.upload-form{

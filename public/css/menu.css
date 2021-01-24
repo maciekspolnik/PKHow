@@ -1,0 +1,73 @@
+nav{
+width: 20vw;
+height: 100%;
+background: transparent linear-gradient(180deg, #5F8594B5 0%, #5F8594 100%) 0% 0% no-repeat padding-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+nav > img{
+width: 60%;
+margin: 0.5em auto;
+justify-content: center;
+
+}
+
+main{
+width: 80vw;
+height: 100%;
+background: #EBEAEA 0 0 no-repeat padding-box;
+}
+
+a {
+text-decoration: none;
+display: inline-block;
+line-height: 2em;
+    width: 100%;
+
+}
+
+
+
+.button{
+    border-radius: 2em;
+    margin-left: 1em;
+    text-align: center;
+    background: #B1F6FFD4 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    letter-spacing: 0.7px;
+    color: #444444;
+    padding: 0.5em;
+    width: 70%;
+    font: normal normal normal 16px/20px Segoe UI;
+
+height: 2vh;
+font-size: 30px;
+text-justify: auto;
+justify-content: center;
+
+}
+
+ul{
+list-style-type: none;
+width:calc(100% - 15px);
+height:100%;
+margin: 0 auto;
+padding: 0;
+position: relative;
+}
+
+li{
+
+justify-content: center;
+margin-bottom: 1em;
+
+}
+
+li:last-child{
+position: absolute;
+bottom: 10vh;
+width: 100%;
+}

@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #A4DFE7 0 0 no-repeat padding-box;
+    border: none;
+}
+
+.search-bar{
+    width: 60%;
+    min-width: fit-content;
+}
+
+.search-bar > input{
+    background: #F0F0F0 0 0 no-repeat padding-box;
+    border: none;
+    border-radius: 2em;
+    color: #444444;
+    width: 80%;
+    text-align: left;
+    justify-content: center;
+    margin: 0;
+    font: normal normal normal 20px/27px Segoe UI;
+    box-shadow: 0 2px 6px #00000029;
+    box-sizing: border-box;
+}
+
+.no-valid{
+    border:3px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+}
+
+.profile{
+    display:flex;
+    font: normal normal normal 20px/27px Segoe UI;
+    color: #444444;
+    align-items: center;
+    margin-left: 1em;
+}
+

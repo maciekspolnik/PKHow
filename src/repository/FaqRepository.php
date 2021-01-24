@@ -28,7 +28,7 @@ class FaqRepository extends Repository
     {
         $result = [];
         $statement = $this->database->connect()->prepare('
-            SELECT * FROM public.faq
+            SELECT * FROM all_faqs
         ');
         $statement->execute();
         $allFaq = $statement->fetchAll(PDO::FETCH_ASSOC);

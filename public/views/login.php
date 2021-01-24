@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" type="text/css" href="public/css/login_register.css">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <title>PK How - Logowanie</title>
 </head>

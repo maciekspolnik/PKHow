@@ -11,8 +11,8 @@
         <li>
             <a href="http://localhost:8080/faq" class="button">FAQ</a>
         </li>
-        <li>
-            <a href="#" class="button">Ustawienia</a>
+        <li id="last">
+            <a href="#" class="button">Wyloguj Się</a>
         </li>
     </ul>
 </nav>
