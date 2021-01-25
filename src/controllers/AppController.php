@@ -62,7 +62,6 @@ class AppController{
         if (isset($_COOKIE['user_token'])) {
             return $userRepository->cookieCheck($_COOKIE['user_token']);
         }
-        //TODO Replace each return 0 with throwing Exception
         return 0;
 
     }

@@ -100,20 +100,23 @@ class UserRepository extends Repository
 
     public function cookieCheck($user_token): int
     {
+
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM session WHERE token=:token AND expiration_date>:currentDate
+            SELECT id_user,token FROM session
         ');
         $currentDate = date("Y-m-d H:i:s");
-        $stmt->bindParam(':token', $user_token, PDO::PARAM_STR);
-        $stmt->bindParam(':currentDate', $currentDate, PDO::PARAM_STR);
+     //   $stmt->bindParam(':token', $user_token, PDO::PARAM_STR);
+    //    $stmt->bindParam(':currentDate', $currentDate, PDO::PARAM_STR);
         $stmt->execute();
 
-        $cookieInfo = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($cookieInfo == null) {
-            return 0;
+        $cookieInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($cookieInfo as $cookie)
+        {  
+            if ($cookie['token']==$user_token) {
+            return 1;}
         }
 
-        return $cookieInfo['id_user'];
+        return 0;
     }
 
     public function setCookie($id, $token)
