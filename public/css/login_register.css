@@ -12,6 +12,12 @@
     color: #444444;
 }
 
+a{
+    text-decoration: none;
+    margin-top: 1em;
+    justify-content: flex-end;
+}
+
 .logo > img{
     height: 40vh;
     margin-bottom: 0;

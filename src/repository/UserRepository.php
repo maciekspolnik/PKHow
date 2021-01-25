@@ -8,7 +8,7 @@ class UserRepository extends Repository
     public function getUser(string $email): ?User
     {
         $statement = $this->database->connect()->prepare('
-            SELECT * FROM public.users u JOIN user_details d ON d.id=u.id_user_details WHERE email = :email
+            SELECT u.id as id, email, password, name, surname, phone_number FROM public.users u LEFT JOIN user_details ud on ud.id = u.id_user_details WHERE email = :email
         ');
         $statement->bindParam(':email', $email, PDO::PARAM_STR);
         $statement->execute();
@@ -81,6 +81,7 @@ class UserRepository extends Repository
         $statement->execute();
 
         $cookieInfo = $statement->fetchAll(PDO::FETCH_ASSOC);
+
         foreach ($cookieInfo as $cookie) {
             if ($cookie['token'] == $user_token) {
                 return $cookie['id_user'];
