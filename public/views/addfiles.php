@@ -12,7 +12,8 @@
     <div class="base-container">
         <?php include('public/views/menu.php') ?>
          <main>
-             <?php include('public/views/bar.php') ?>
+             <header><?php include('public/views/bar.php') ?></header>
+
              <section class="upload-form">
                  <h1>DODAJ WIDEO</h1>
                  <?php if(isset($messages)) {

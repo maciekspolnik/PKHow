@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,12 +7,12 @@ header{
     border: none;
 }
 
-.search-bar{
+.search-bar {
     width: 60%;
     min-width: fit-content;
 }
 
-.search-bar > input{
+.search-bar > input {
     background: #F0F0F0 0 0 no-repeat padding-box;
     border: none;
     border-radius: 2em;
@@ -26,18 +26,17 @@ header{
     box-sizing: border-box;
 }
 
-.no-valid{
+.no-valid {
     border:3px solid red;
     border-radius: 20px;
     box-shadow: 0 0 0.2em red;
     outline: none;
 }
 
-.profile{
+.profile {
     display:flex;
     font: normal normal normal 20px/27px Segoe UI;
     color: #444444;
     align-items: center;
     margin-left: 1em;
 }
-

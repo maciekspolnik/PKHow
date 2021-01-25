@@ -34,12 +34,13 @@ class AppController{
         }
         print $output;
     }
+
     protected function setCookie($id, $token)
     {
         $userRepository = new UserRepository();
         $userRepository->setCookie($id, $token);
 
-        setcookie('user_token', $token, time() + 3600, '/'); // expires after 1 hour)
+        setcookie('user_token', $token, time() + 3600, '/');
     }
 
     protected function unsetCookie($token): string
@@ -51,7 +52,6 @@ class AppController{
         } catch (Exception $e) {
             return ('Exception happened while unsetting cookie. Message: ' . $e->getMessage());
         }
-
         return $userRepository->unsetCookie($token);
     }
 
@@ -63,7 +63,6 @@ class AppController{
             return $userRepository->cookieCheck($_COOKIE['user_token']);
         }
         return 0;
-
     }
 
     protected function cookieCheck(): int
@@ -72,9 +71,6 @@ class AppController{
         if($userID!=0){
             return $userID;
         }
-
         return 0;
-
     }
-
 }

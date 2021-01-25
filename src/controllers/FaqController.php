@@ -1,15 +1,11 @@
 <?php
 
 require_once 'AppController.php';
-
 require_once __DIR__.'/../models/FAQ.php';
 require_once __DIR__.'/../repository/FaqRepository.php';
 
-
 class FaqController extends AppController
 {
-
-
     private $message = [];
     private $faqRepository;
 
@@ -17,12 +13,6 @@ class FaqController extends AppController
     {
         parent::__construct();
         $this->faqRepository = new FaqRepository();
-    }
-
-    public function faq()
-    {
-        $faq = $this->faqRepository->getAllFAQ();
-        $this->render('faq', ['allFaq' => $faq]);
     }
 
     public function searchfaq()

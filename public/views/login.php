@@ -28,6 +28,7 @@
                 <input name="email" type="text" placeholder=" email@email.com">
                 <input name="password" type="password" placeholder=" password">
                 <button type="submit">Login</button>
+                <a href="localhost:8080/register">Rejestracja</a>
             </form>
         </div>  
     </div>

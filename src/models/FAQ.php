@@ -11,24 +11,9 @@ class FAQ
         $this->question = $question;
         $this->answer = $answer;
     }
+    public function getQuestion(){ return $this->question;}
+    public function getAnswer(){return $this->answer;}
 
-    public function getQuestion()
-    {
-        return $this->question;
-    }
-
-    public function setQuestion($question): void
-    {
-        $this->question = $question;
-    }
-
-    public function getAnswer()
-    {
-        return $this->answer;
-    }
-
-    public function setAnswer($answer): void
-    {
-        $this->answer = $answer;
-    }
+    public function setQuestion($question): void { $this->question = $question;}
+    public function setAnswer($answer): void{$this->answer = $answer;}
 }

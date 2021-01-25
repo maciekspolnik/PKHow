@@ -1,16 +1,14 @@
 <?php
 
 require_once 'AppController.php';
-
 require_once __DIR__.'/../models/Video.php';
 require_once __DIR__.'/../repository/VideoRepository.php';
-
 
 class VideosController extends AppController
 {
     const MAX_SIZE = 1024*1024;
     const TYPES_ALLOWED = ['image/png','image/jpeg'];
-    const UPLOAD_DIR = '/../public/video_covers/';
+    const UPLOAD_DIRECTORY = '/../public/img';
 
     private $message = [];
     private $videoRepository;
@@ -21,27 +19,27 @@ class VideosController extends AppController
         $this->videoRepository = new VideoRepository();
     }
 
-    public function videos()
-    {
-        $videos = $this->videoRepository->getVideos();
-        $this->render('videos',['videos'=>$videos]);
-    }
-
     public function addFile()
+
     {
-        if($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file']))
+        if($this->cookieCheck()!=0 &&  $this->videoRepository->getRole($this->getCurrentUserID())=='admin')
         {
-            move_uploaded_file($_FILES['file']['tmp_name'],
-                dirname(__DIR__).self::UPLOAD_DIR.$_FILES['file']['name']);
+            if($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file']))
+            {
+                move_uploaded_file(
+                    $_FILES['file']['tmp_name'],
+                    dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']);
 
-            $video = new Video($_POST['title'],$_POST['description'],$_POST['url'],$_FILES['file']['name']);
-            $this->videoRepository->addVideo($video);
+                $video = new Video($_POST['title'],$_POST['description'],$_POST['url'],$_FILES['file']['name']);
+                $this->videoRepository->addVideo($video);
 
+            }
+            return $this->render('addfiles',['messages'=>$this->message]);
+        } else {
             $url = "http://$_SERVER[HTTP_HOST]";
             header("Location: {$url}/videos");
-
         }
-        return $this->render('addfiles',['messages'=>$this->message]);
+
     }
 
     public function search()

@@ -1,11 +1,11 @@
 <?php
 
 require_once 'AppController.php';
-require_once __DIR__.'/../repository/VideoRepository.php';
+require_once __DIR__.'/../repository/PanelRepository.php';
 require_once __DIR__.'/../repository/FaqRepository.php';
+require_once __DIR__.'/../repository/VideoRepository.php';
 
 class DefaultController extends AppController {
-
 
     public function index()
     {
@@ -14,20 +14,35 @@ class DefaultController extends AppController {
             header("Location: {$url}/videos");
         }
         else {
-            $this->render('login');
+            return $this->render('login');
         }
-    }
-    public function videos()
-    {
-        if ($this->cookieCheck() != 0) {
-            $videoRepository = new VideoRepository();
-            $this->render('videos',['videos'=>$videoRepository->getVideos()]);
-        }
-        else
-            {
-                $this->render('login');
-            }
     }
 
+    public function videos()
+    {
+        if ($this->cookieCheck() != 0)
+        {
+            $videoRepository = new VideoRepository();
+            return $this->render('videos',['videos'=>$videoRepository->getVideos()]);
+        } else return  $this->render('login');
+    }
+
+    public function faq()
+    {
+        if ($this->cookieCheck() != 0)
+        {
+            $faqRepository = new FaqRepository();
+            return $this->render('faq',['allFaq'=>$faqRepository->getAllFAQ()]);
+        } else return $this->render('login');
+    }
+
+
+    public function panel()
+    {
+        if ($this->cookieCheck() != 0) {
+            $panelRepository = new PanelRepository();
+            return $this->render('panel', ['panels' => $panelRepository->getAllPanels()]);
+        } else return  $this->render('login');
+    }
 
 }

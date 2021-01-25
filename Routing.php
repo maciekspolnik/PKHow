@@ -28,6 +28,7 @@ class Router{
         $controller = self::$routes[$action];
         $object = new $controller;
         $controller = self::$routes[$action];
+        $action = $action ?: 'index';
 
         $object->$action();
     }

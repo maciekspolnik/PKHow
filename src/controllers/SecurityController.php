@@ -18,10 +18,7 @@ class SecurityController extends AppController
 
     public function login()
     {
-
         if($this->getCurrentUserID()==0) {
-
-
             $userRepository = new UserRepository();
 
             if (!$this->isPost()) {
@@ -45,10 +42,7 @@ class SecurityController extends AppController
                 $this->setCookie($user->getId(), uniqid());
                 return $this->render('videos', ['videos'=>$videoRepository->getVideos()]);
             }
-            else
-                {
-                return $this->render('login', ['messages' => ['Wrong password!']]);
-                }
+            else return $this->render('login', ['messages' => ['Wrong password!']]);
         }
     }
 
@@ -68,23 +62,25 @@ class SecurityController extends AppController
 
         if ($password !== $confirmedPassword)
         {
-            return $this->render('register', ['messages' => ['Please provide proper password']]);
+            return $this->render('register', ['messages' => ['Podane hasła nie są zgodne']]);
         }
-
+        if (strlen($password) < 8)
+        {
+            return $this->render('register', ['messages' => ['Podane hasło jest za krótkie']]);
+        }
 
         $this->userRepository->newUser($email, md5($password), $name, $surname, $phone);
 
-        return $this->render('login', ['messages' => ['You\'ve been succesfully registrated!']]);
+        return $this->render('login', ['messages' => ['Rejestracja przebiegła pomyślnie']]);
     }
 
-    public function logOut()
+    public function logout()
     {
-        $currID=$this->getCurrentUserID();
-        if($currID==0){
-            return $this->render('login', ['messages' => ["You're session expired"]]);
+        $currentID=$this->getCurrentUserID();
+        if($currentID==0){
+            return $this->render('login', ['messages' => ["Sesja wygasła"]]);
         }
         return $this->render('login', ['messages' => [$this->unsetCookie($_COOKIE['user_token'])]]);
     }
-
 }
 
