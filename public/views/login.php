@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <div class="logo"> 
-            <img src="public/img/logo.png">
+            <img src="public/img/logo.svg">
             <div>
                 Wszystko, czego potrzebujesz wiedzieć o studiowaniu na PK w jednym miejscu
             </div>
@@ -25,10 +25,10 @@
                     ?>
                 </div>
                 <div>Zaloguj się</div>
-                <input name="email" type="text" placeholder=" email@email.com">
+                <input name="email" type="text" placeholder=" email">
                 <input name="password" type="password" placeholder=" password">
                 <button type="submit">Login</button>
-                <a class ="logo" href="<?= "http://$_SERVER[HTTP_HOST]/register" ?>">Rejestracja</a>
+                <a class ="upload-file" href="<?= "http://$_SERVER[HTTP_HOST]/register" ?>">Rejestracja</a>
             </form>
         </div>  
     </div>

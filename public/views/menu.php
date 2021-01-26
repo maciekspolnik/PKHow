@@ -13,7 +13,7 @@
             <a href="<?= "http://$_SERVER[HTTP_HOST]/faq" ?>" class="button">FAQ</a>
         </li>
         <li class = last>
-            <a href="<?= "http://$_SERVER[HTTP_HOST]/logout" ?>" class="button">Wyloguj Się</a>
+            <a href="<?= "http://$_SERVER[HTTP_HOST]/logout" ?>" class="button">Wyloguj</a>
         </li>
     </ul>
 </nav>

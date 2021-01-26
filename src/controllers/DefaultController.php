@@ -10,8 +10,8 @@ class DefaultController extends AppController {
     public function index()
     {
         if ($this->cookieCheck() != 0) {
-            $url = "http://$_SERVER[HTTP_HOST]";
-            header("Location: {$url}/videos");
+            $videoRepository = new VideoRepository();
+            return $this->render('videos',['videos'=>$videoRepository->getVideos()]);
         }
         else {
             return $this->render('login');

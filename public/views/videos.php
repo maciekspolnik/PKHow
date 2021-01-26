@@ -45,7 +45,7 @@
                 <img alt="PK" src=""></a>
         </div>
         <div>
-            <h2>title</h2>
+            <h2 class="video_title">title</h2>
             <p>description</p>
         </div>
     </div>

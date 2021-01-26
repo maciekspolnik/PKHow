@@ -22,7 +22,7 @@
                         }
                     ?>
                 </div>
-                <div>Rejestracja</div>
+                <div class="upload-file">Rejestracja</div>
                 <input name="email" type="text" placeholder="email@email.com">
                 <input name="password" type="password" placeholder="password">
                 <input name="confirmedPassword" type="password" placeholder="confirm password">

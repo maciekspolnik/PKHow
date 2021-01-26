@@ -59,12 +59,14 @@ form.register{
 
 .login>div{
     font: normal normal normal 20px/27px Segoe UI;
-    margin-bottom: 1.5em;
     font-size: 30px;
 }
 
 .Register>div{
     font: normal normal normal 20px/27px Segoe UI;
-    margin-bottom: 1.5em;
     font-size: 30px;
+}
+
+button{
+    margin-bottom: 1em;
 }

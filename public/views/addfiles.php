@@ -15,7 +15,7 @@
              <header><?php include('public/views/bar.php') ?></header>
 
              <section class="upload-form">
-                 <h1>DODAJ WIDEO</h1>
+                 <h1 class="upload-file">DODAJ WIDEO</h1>
                  <?php if(isset($messages)) {
                      foreach ($messages as $message)
                      {

@@ -20,10 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc38df83-1ce9-40d6-a841-e0c358be1ebb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/login_register.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/login_register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/videos.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/videos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/not-logged-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/Office.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/office.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/addfiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/addfiles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/videos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DefaultController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +109,7 @@
       <workItem from="1611565010930" duration="594000" />
       <workItem from="1611579245850" duration="20974000" />
       <workItem from="1611606588478" duration="3346000" />
-      <workItem from="1611613873670" duration="1456000" />
+      <workItem from="1611613873670" duration="10098000" />
     </task>
     <servers />
   </component>

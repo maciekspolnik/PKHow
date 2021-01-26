@@ -27,7 +27,10 @@ button{
     justify-content: center;
     text-align: center;
 }
-
+.upload-file{
+    font: normal normal normal 30px/31px Segoe UI;
+    color: #444444;
+}
 
 @media only screen and (max-device-width: 420px){
     .container{
