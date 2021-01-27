@@ -26,12 +26,7 @@ header {
     box-sizing: border-box;
 }
 
-.no-valid {
-    border:3px solid red;
-    border-radius: 20px;
-    box-shadow: 0 0 0.2em red;
-    outline: none;
-}
+
 
 .profile {
     display:flex;
