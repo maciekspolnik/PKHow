@@ -54,13 +54,13 @@ class VideoRepository extends Repository
     }
     public function getRole(int $ID)
     {
-
         $statement = $this->database->connect()->prepare('
             SELECT role FROM public.users u JOIN public.role r ON u.id = r.id_user WHERE u.id =:id
         ');
         $statement->bindParam(':id',$ID,PDO::PARAM_INT);
         $statement->execute();
         $result = $statement->fetch(PDO::FETCH_ASSOC);
+
         return $result['role'];
     }
 }

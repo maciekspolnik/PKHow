@@ -110,7 +110,7 @@ class UserRepository extends Repository
                 $time
             ]);
         } catch (PDOException $e) {
-            die("Exception happened while setting cookie. Message: " . $e->getMessage());
+            die("Error while setting cookie: " . $e->getMessage());
         }
     }
 
@@ -124,7 +124,7 @@ class UserRepository extends Repository
             $statement->execute();
             return ("Wylogowano");
         } catch (PDOException $e) {
-            return ("Exception happened while unsetting cookie. Message: " . $e->getMessage());
+            return ("Error while unsetting cookie. Message: " . $e->getMessage());
         }
     }
 }

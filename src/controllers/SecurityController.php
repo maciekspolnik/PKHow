@@ -21,7 +21,8 @@ class SecurityController extends AppController
         if($this->getCurrentUserID()==0) {
             $userRepository = new UserRepository();
 
-            if (!$this->isPost()) {
+            if (!$this->isPost())
+            {
                 return $this->render('login');
             }
 
@@ -30,15 +31,18 @@ class SecurityController extends AppController
             $user = $userRepository->getUser($email);
             $videoRepository = new VideoRepository();
 
-            if (!$user) {
+            if (!$user)
+            {
                 return $this->render('login', ['messages' => ['User not found!']]);
             }
 
-            if ($user->getEmail() !== $email) {
+            if ($user->getEmail() !== $email)
+            {
                 return $this->render('login', ['messages' => ['User with this email not exist!']]);
             }
 
-            if ($user->getPassword() == $password) {
+            if ($user->getPassword() == $password)
+            {
                 $this->setCookie($user->getId(), uniqid());
                 return $this->render('videos', ['videos'=>$videoRepository->getVideos()]);
             }
@@ -77,10 +81,10 @@ class SecurityController extends AppController
     public function logout()
     {
         $currentID=$this->getCurrentUserID();
-        if($currentID==0){
+        if($currentID==0)
+        {
             return $this->render('login', ['messages' => ["Sesja wygasła"]]);
         }
         return $this->render('login', ['messages' => [$this->unsetCookie($_COOKIE['user_token'])]]);
     }
 }
-

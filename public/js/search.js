@@ -31,7 +31,6 @@ function loadProjects(projects)
 {
     projects.forEach(
         project => {
-            console.log(project);
             createProject(project);
         })
 }

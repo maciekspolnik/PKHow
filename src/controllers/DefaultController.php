@@ -13,9 +13,7 @@ class DefaultController extends AppController {
             $videoRepository = new VideoRepository();
             return $this->render('videos',['videos'=>$videoRepository->getVideos()]);
         }
-        else {
-            return $this->render('login');
-        }
+        else return $this->render('login');
     }
 
     public function videos()
@@ -36,7 +34,6 @@ class DefaultController extends AppController {
         } else return $this->render('login');
     }
 
-
     public function panel()
     {
         if ($this->cookieCheck() != 0) {
@@ -44,5 +41,4 @@ class DefaultController extends AppController {
             return $this->render('panel', ['panels' => $panelRepository->getAllPanels()]);
         } else return  $this->render('login');
     }
-
 }

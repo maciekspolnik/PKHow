@@ -50,8 +50,7 @@ class AppController{
         try {
             setcookie('user_token', null, -1, '/');
         } catch (Exception $e) {
-            return ('Exception happened while unsetting cookie. Message: ' . $e->getMessage());
-        }
+            return ('Error while setting cookie: ' . $e->getMessage());}
         return $userRepository->unsetCookie($token);
     }
 
@@ -60,8 +59,7 @@ class AppController{
         $userRepository = new UserRepository();
 
         if (isset($_COOKIE['user_token'])) {
-            return $userRepository->cookieCheck($_COOKIE['user_token']);
-        }
+            return $userRepository->cookieCheck($_COOKIE['user_token']);}
         return 0;
     }
 
@@ -69,8 +67,7 @@ class AppController{
     {
         $userID=$this->getCurrentUserID();
         if($userID!=0){
-            return $userID;
-        }
+            return $userID;}
         return 0;
     }
 }

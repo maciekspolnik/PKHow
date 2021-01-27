@@ -2,7 +2,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/login_register.css">
+
     <script type="text/javascript" src="./public/js/script.js" defer></script>
+
     <title>REGISTER</title>
 </head>
 
@@ -15,12 +17,11 @@
             <form class="register" action="register" method="POST">
                 <div class="messages">
                     <?php
-                        if(isset($messages)){
-                            foreach($messages as $message) {
-                                echo $message;
-                            }
+                    if(isset($messages)){
+                        foreach($messages as $message) {
+                            echo $message;
                         }
-                    ?>
+                    } ?>
                 </div>
                 <div class="upload-file">Rejestracja</div>
                 <input name="email" type="text" placeholder="email@email.com">

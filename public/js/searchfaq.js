@@ -31,7 +31,6 @@ function loadFAQs(faqs)
 {
     faqs.forEach(
         faq => {
-            console.log(faqs);
             createFAQs(faq);
         })
 }

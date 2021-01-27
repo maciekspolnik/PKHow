@@ -13,21 +13,20 @@
 <body>
     <div class="base-container">
         <?php include('public/views/menu.php') ?>
-         <main>
-             <header><?php include('public/views/bar.php') ?></header>
-             <h2 class="question">Często zadawane pytania</h2>
-             <section class="faq">
-
-                 <?php foreach($allFaq as $faq): ?>
-                 <div>
-                     <div>
-                         <div class = question><?=$faq->getQuestion()?></div>
-                         <div class = answer><?=$faq->getAnswer()?></div>
-                     </div>
-                 </div>
-                 <?php endforeach; ?>
-             </section>
-         </main>
+        <main>
+            <header><?php include('public/views/bar.php') ?></header>
+            <h2 class="question">Często zadawane pytania</h2>
+            <section class="faq">
+                <?php foreach($allFaq as $faq): ?>
+                    <div>
+                        <div>
+                            <div class = question><?=$faq->getQuestion()?></div>
+                            <div class = answer><?=$faq->getAnswer()?></div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </section>
+        </main>
     </div>
 </body>
 

@@ -13,28 +13,27 @@
 
 <body>
     <div class="base-container">
-         <?php include('public/views/menu.php') ?>
+        <?php include('public/views/menu.php') ?>
         <main>
             <header>
-            <?php include('public/views/bar.php') ?>
+                <?php include('public/views/bar.php') ?>
             </header>
-             <section class="projects">
-                 <?php foreach ($videos as $video): ?>
-                     <div id=project-1>
-                         <div class="photo">
-                             <a href=<?=$video->getUrl()?>>
-                                 <img border="0" alt="PK" src=public\uploads\<?=$video->getImage()?>></a>
+            <section class="projects">
+                <?php foreach ($videos as $video): ?>
+                    <div id=project-1>
+                        <div class="photo">
+                            <a href=<?=$video->getUrl()?>>
+                                <img border="0" alt="PK" src=public\uploads\<?=$video->getImage()?>></a>
                          </div>
-                         <div>
-                             <h2 class="video_title"><?=$video->getTitle()?></h2>
-                             <p><?=$video->getDescription()?></p>
-                         </div>
-                     </div>
-                 <?php endforeach; ?>
-     </div>
-
-             </section>
-         </main>
+                        <div>
+                            <h2 class="video_title"><?=$video->getTitle()?></h2>
+                            <p><?=$video->getDescription()?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+    </div>
+    </section>
+    </main>
     </div>
 </body>
 

@@ -17,11 +17,10 @@
              <header><?php include('public/views/bar.php') ?></header>
              <h2 class="question">Wszystkie potrzebne linki w jednym miejscu</h2>
              <section class="panel">
-
                  <?php foreach($panels as $panel): ?>
-                 <a class = block href =<?=$panel->getUrl()?>>
-                     <div class = question><?=$panel->getTitle()?></div>
-                 </a>
+                     <a class = block href =<?=$panel->getUrl()?>>
+                         <div class = question><?=$panel->getTitle()?></div>
+                     </a>
                  <?php endforeach; ?>
              </section>
          </main>

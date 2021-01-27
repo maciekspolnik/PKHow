@@ -53,7 +53,6 @@ class VideosController extends AppController
             http_response_code(200);
             echo json_encode($this->videoRepository->getVideoByTitle($decoded['search']));
         }
-
     }
 
     private function validate(array $file):bool
@@ -70,7 +69,6 @@ class VideosController extends AppController
        }
        return true;
     }
-
 }
 
 

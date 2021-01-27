@@ -7,15 +7,13 @@
     <script src="https://kit.fontawesome.com/6a29cc77d5.js" crossorigin="anonymous"></script>
     <title>PK How - Dodaj Film</title>
 </head>
-
 <body>
     <div class="base-container">
         <?php include('public/views/menu.php') ?>
-         <main>
-             <header><?php include('public/views/bar.php') ?></header>
-
-             <section class="upload-form">
-                 <h1 class="upload-file">DODAJ WIDEO</h1>
+        <main>
+            <header><?php include('public/views/bar.php') ?></header>
+            <section class="upload-form">
+                <h1 class="upload-file">DODAJ WIDEO</h1>
                  <?php if(isset($messages)) {
                      foreach ($messages as $message)
                      {

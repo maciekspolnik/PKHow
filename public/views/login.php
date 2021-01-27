@@ -6,30 +6,27 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo"> 
-            <img src="public/img/logo.svg">
-            <div>
-                Wszystko, czego potrzebujesz wiedzieć o studiowaniu na PK w jednym miejscu
-            </div>
-        </div>
-        <div class="login-container">
-            <form class="login" action="login" method="POST">
-                <div class = "messages">
-                    <?php if(isset($messages)) {
-                        foreach ($messages as $message)
-                        {
-                            echo $message;
-                        }
-                    }
-                    ?>
-                </div>
-                <div>Zaloguj się</div>
-                <input name="email" type="text" placeholder=" email">
-                <input name="password" type="password" placeholder=" password">
-                <button type="submit">Login</button>
-                <a class ="upload-file" href="<?= "http://$_SERVER[HTTP_HOST]/register" ?>">Rejestracja</a>
-            </form>
-        </div>  
+<div class="container">
+    <div class="logo">
+        <img src="public/img/logo.svg">
+        <div>Wszystko, czego potrzebujesz wiedzieć o studiowaniu na PK w jednym miejscu</div>
     </div>
+    <div class="login-container">
+        <form class="login" action="login" method="POST">
+            <div class = "messages">
+                <?php if(isset($messages)) {
+                    foreach ($messages as $message)
+                    {
+                        echo $message;
+                    }
+                } ?>
+            </div>
+            <div>Zaloguj się</div>
+            <input name="email" type="text" placeholder=" email">
+            <input name="password" type="password" placeholder=" password">
+            <button type="submit">Login</button>
+            <a class ="upload-file" href="<?= "http://$_SERVER[HTTP_HOST]/register" ?>">Rejestracja</a>
+        </form>
+    </div>
+</div>
 </body>
